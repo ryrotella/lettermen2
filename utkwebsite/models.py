@@ -4,8 +4,6 @@ from .validators import validate_name, validate_brand
 from django.core.validators import MinLengthValidator
 
 # Create your models here.
-class AthImage(models.Model):
-    image = models.ImageField(upload_to = 'gallery/')
 
 
 class ServiceAward(models.Model):

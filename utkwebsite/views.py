@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
-from .models import AthImage, ServiceAward, LetterAward, BoardAward
+from .models import ServiceAward, LetterAward, BoardAward
 from .forms import ServiceForm, LetterForm, BoardForm
 from django.http import HttpResponseRedirect
 
@@ -142,8 +142,3 @@ def board_form(request):
 
 
     return render(request, 'utkwebsite/board_form.html', {'form': form})
-
-class AthGalleryView(ListView):
-    model = AthImage
-    template_name = 'utkwebsite/index.html'
-    context_object_name = 'athImages'

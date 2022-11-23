@@ -44,8 +44,45 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+#memberTitle {
+    font-weight: 800;
+}
+
+#memberSupport {
+    font-style: italic;
+}
+
+.col {
+    text-align: center;
+}
+
+.forUsers {
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-size: 32px !important;
+}
+
+div {
+    font-size: 22px !important;
+}
+
+/* Apple v android images */
+
 .row > .col-4 > img {
-    height: 100px !important;
-    width: auto;
+    height: auto;
+    width: 90%;
+    margin-bottom: 10%;
+    border: black 1px solid;
     
+}
+
+/* Step 4 onward images */
+
+.row > .col > img { 
+    height: auto;
+    width: 30%;
+    border: black 1px solid;
 }
