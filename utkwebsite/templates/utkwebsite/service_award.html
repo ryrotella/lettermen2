@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>University of Tennessee T Club</title>
+        {% load static %}
+        <link rel="stylesheet"  href="{%static  'css/membership.css'  %}">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <nav class="navbar sticky-top navbar-expand-md py-3 border-bottom border-dark"> 
+            <a class="navbar-brand px-md-5" href="https://utsports.com/" target="_blank"><img id="logo" src="{%static '/assets/athletes/powerTLogoWhite.png' %}"></a>
+            <a class="navbar-brand" href="/">University of Tennessee T Club</a>
+            <!-- Image of power T - link to UT Athletics -->
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item px-md-2"> <a class="nav-link navbar-text" href="/">Home</a> </li> 
+                <li class="nav-item px-md-2"> <a class="nav-link navbar-text" href="{% url 'utkwebsite:about' %}">About</a> </li> 
+                <!-- <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMemberMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Membership</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMemberMenuLink">
+                        <li><a class="dropdown-item" href="#">How to Apply</a></li>
+                        <li><a class="dropdown-item" href="#">Benefits</a></li>
+                        <li><a class="dropdown-item" href="#">Community Impact</a></li>
+                    </ul>
+                </li>  -->
+                <li class="nav-item dropdown px-md-2"> 
+                  <a class="nav-link navbar-text" href="{% url 'utkwebsite:events' %}">Events</a>
+                  <!--  <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownEventMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownEventMenuLink">
+                        <li><a class="dropdown-item" href="#">Calendar</a></li>
+                        <li><a class="dropdown-item" href="#">Annual Golf Tournament</a></li>
+                    </ul>
+                -->
+                </li> 
+                <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownAwardMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Honors</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAwardMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:service_award' %}">Service Award</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:letterwinner' %}">Honorary Letterwinner</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:board' %}">Board of Directors</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownFormMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownFormMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:service_form' %}">Service Award Nomination Form</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:letter_winner_form' %}">Honorary Letterwinner Form</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:board_form' %}">Board of Directors Form</a></li>
+                    </ul>
+                </li> -->
+                <!-- <li class="nav-item px-md-2"> <a class="nav-link active" href="/">Donate</a> </li> -->
+                <li class="nav-item px-md-2"> <a class="nav-link active" href="{% url 'utkwebsite:contact' %}">Contact</a> </li>
+                <li class="nav-item px-md-2">
+                    <a class="nav-link active btn btn-outline-light" href="{% url 'utkwebsite:membership' %}" role="button">
+                        Become a member
+                    </a>
+                </li>
+            </ul> 
+        </nav>
+
+        
+
+<div class="container-fluid">
+
+    <h2>Service Award Winners</h2>
+    <p>Every year, the T Club selects a Letterwinner who has gone above and beyond to positively impact their community
+        to receive the Service Award. </p>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Year of Award</th>
+            <th scope="col">Sport played</th>
+            <th scope="col">Years of Sport(s) played/Class Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Bill Anderson</th>
+            <td>1998</td>
+            <td>Football</td>
+            <td>1955-1957</td>
+          </tr>
+          <tr>
+            <th scope="row">Bob Davis</th>
+            <td>2000</td>
+            <td>Football</td>
+            <td>1949-1951</td>
+          </tr>
+          <tr>
+            <th scope="row">Gene Moeller</th>
+            <td>2000</td>
+            <td>Football & Track</td>
+            <td>1951-1952</td>
+          </tr>
+          <tr>
+            <th scope="row">Gordon Polofsky</th>
+            <td>2000</td>
+            <td>Football</td>
+            <td>1952-1953</td>
+          </tr>
+       
+        </tbody>
+      </table>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

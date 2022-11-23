@@ -1,0 +1,102 @@
+.navbar{
+    background-color: #FF8200;
+}
+
+.nav-link, .nav-text, .navbar-brand {
+    color: white;
+    
+    
+}
+
+#logo{
+    height: 75px;
+    width: auto;
+}
+
+.sectionBreak {
+background-color: #FF8200;
+height: 75px;
+}
+
+.athletePhotoGallery, .carousel-inner, .carousel-item {
+    height: 500px;
+    /* width: 100%; */
+    
+}
+
+.row {
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sectionBreak > h1 {
+    color: white;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 2;
+    overflow: visible;
+
+    }
+
+.card {
+    position: relative;
+    z-index: 1;
+    /* height: 500px; */
+    
+}
+
+.card-img-top {
+    height: 500px;
+}
+
+.card-title {
+
+    color: rgba(83, 86, 90);
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+    background-color: rgba(83, 86, 90, 0.7);
+    color: #FF8200;
+    height: 100%;
+    
+
+}
+
+footer {
+    color: rgba(83, 86, 90);
+    background-color: #FF8200;
+}
+
+.btn {
+    color: #FF8200 !important;
+    font-size: 30px !important;
+}
+
+form {
+/* display: inline-block; */
+align-content: center;
+width: 50%;
+}
+
+#serviceStatement{
+    width: 100%;
+}
+
+label {
+    font-size: 24px !important;
+}
+
+/* .form-group > * {
+    text-align: center;
+} */

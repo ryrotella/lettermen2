@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>University of Tennessee T Club</title>
+        {% load static %}
+        <link rel="stylesheet"  href="{%static  'css/membership.css'  %}">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <nav class="navbar sticky-top navbar-expand-md py-3 border-bottom border-dark"> 
+            <a class="navbar-brand px-md-5" href="https://utsports.com/" target="_blank"><img id="logo" src="{%static '/assets/athletes/powerTLogoWhite.png' %}"></a>
+            <a class="navbar-brand" href="/">University of Tennessee T Club</a>
+            <!-- Image of power T - link to UT Athletics -->
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item px-md-2"> <a class="nav-link navbar-text" href="/">Home</a> </li> 
+                <li class="nav-item px-md-2"> <a class="nav-link navbar-text" href="{% url 'utkwebsite:about' %}">About</a> </li> 
+                <!-- <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMemberMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Membership</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMemberMenuLink">
+                        <li><a class="dropdown-item" href="#">How to Apply</a></li>
+                        <li><a class="dropdown-item" href="#">Benefits</a></li>
+                        <li><a class="dropdown-item" href="#">Community Impact</a></li>
+                    </ul>
+                </li>  -->
+                <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link navbar-text" href="{% url 'utkwebsite:events' %}">Events</a>
+                    <!--  <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownEventMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a> 
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownEventMenuLink">
+                          <li><a class="dropdown-item" href="#">Calendar</a></li>
+                          <li><a class="dropdown-item" href="#">Annual Golf Tournament</a></li>
+                      </ul>
+                  -->
+                </li> 
+                <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownAwardMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Honors</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownAwardMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:service_award' %}">Service Award</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:letterwinner' %}">Honorary Letterwinner</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:board' %}">Board of Directors</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown px-md-2"> 
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownFormMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownFormMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:service_form' %}">Service Award Nomination Form</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:letter_winner_form' %}">Honorary Letterwinner Form</a></li>
+                        <li><a class="dropdown-item" href="{% url 'utkwebsite:board_form' %}">Board of Directors Form</a></li>
+                    </ul>
+                </li> -->
+                <!-- <li class="nav-item px-md-2"> <a class="nav-link active" href="/">Donate</a> </li> -->
+                <li class="nav-item px-md-2"> <a class="nav-link active" href="{% url 'utkwebsite:contact' %}">Contact</a> </li>
+                <li class="nav-item px-md-2">
+                    <a class="nav-link active btn btn-outline-light" href="{% url 'utkwebsite:membership' %}" role="button">
+                        Become a member
+                    </a>
+                </li>            
+            </ul> 
+        </nav>
+
+        <div class="container-fluid">
+            <h2 class="text-center" id="memberTitle">How to become a member</h2>
+            
+            <p class="text-center" id="memberSupport"> Download our App on your mobile device either in the App Store or Google Play using the below instructions.</p>
+                
+            <div class="row justify-content-around">
+                <div class="col-4 forUsers">
+                    <h5>For iPhone users:</h5>
+                </div>
+                <div class="col-4 forUsers">
+                    <h5>For Android users:</h5>
+                </div>
+            </div>    
+
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    1. Using your iPhone, tap <a href="/"><strong>here</strong> </a> or search for "Tennessee Lettermen T-Club" in the App Store.
+                </div>
+                <div class="col-4">
+                    1. Using your Android, tap <a href="/"><strong>here</strong></a> on your phone or search for "Tennessee Lettermen T-Club" in the <a href="https://play.google.com/"></a>Google Play</a> app.
+                </div>
+            </div> 
+
+            <div class="row justify-content-around">
+                <div class="col-4"> <!-- image of App Store -> search term -> results -->
+                   <img src="static/assets/athletes/appleAppStore.jpeg"> 
+                   <br>
+                   <img src="static/assets/athletes/appleStepOneSearch1.jpeg"> 
+                   <br>
+                   <img src="static/assets/athletes/appleStepOneSearch2.png"> 
+                   <br>
+
+
+                </div>
+                <div class="col-4">
+                    <!-- image of Google Play -> search term -> results -> tap on results-->          
+                    <img src="static/assets/athletes/playStore.jpeg">
+                    <img src="static/assets/athletes/androidHome.jpg"> 
+                   <img src="static/assets/athletes/androidSearch.png">     
+                </div>
+            </div> 
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    2. Tap "Get" and download the app. 
+                </div>
+                <div class="col-4">
+                    2. Tap "Install" and download the app. 
+                </div>
+            </div> 
+
+            <div class="row justify-content-around">
+                <div class="col-4">
+                   <img src="static/assets/athletes/appleStepTwo.jpeg"> <!-- image of GET in App Store -> Open -->
+                </div>
+                <div class="col-4">
+                    <img src="static/assets/athletes/androidInstall.jpg">  <!-- image of Install in Google Play -> Open-->               
+                </div>
+            </div> 
+
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    3. Wait for the App to download completely. Then tap "Open"
+                </div>
+                <div class="col-4">
+                    3. Wait for the App to download completely. Then tap "Open"             
+                </div>
+            </div> 
+
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <img src="static/assets/athletes/appleStepThree.jpeg"> <!-- Open in App Store or Picture of App on phone-->
+                </div>
+                <div class="col-4">
+                    <img src="static/assets/athletes/androidOpen.jpg"><!-- Open in Google Play or Picture of App on phone -->               
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    4. Once in the app, tap on Member Login.
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <img src="static/assets/athletes/StepFour.jpeg"><!-- Screenshot and circle of Member login-->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    5. Then, tap on "Click here to purchase your membership."
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <img src="static/assets/athletes/StepFive.jpeg"><!-- Screenshot and circle of "Click here to purchase your membership."-->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    6. Select the type of membership you want. Then, hit Next.
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <img src="static/assets/athletes/StepSix1.png"> <!-- Screenshot of Types of Membership-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    7. Fill out all relevant member information.
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <img src="static/assets/athletes/StepSeven.png">  <!-- Screenshot of Member Info-->
+                    <img src="static/assets/athletes/StepSevenToo.jpeg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    8. Tap "Pay with Credit Card" and submit your payment
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <img src="static/assets/athletes/StepEight.png"> <!-- Screenshot of "Pay with Credit Card" and filled out credit card (censoring numbers)-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    9. The Board will verify your information and then pending approval, grant you all the benefits of being a Letterwinner<!--, which you can read more about <a href="/"> here.</a>-->
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <!--, which you can read more about <a href="/"> here.</a>-->
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+        </body>
+        </html>

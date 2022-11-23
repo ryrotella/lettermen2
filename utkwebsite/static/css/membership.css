@@ -1,0 +1,88 @@
+.navbar{
+    background-color: #FF8200;
+}
+
+.nav-link, .nav-text, .navbar-brand {
+    color: white;  
+}
+
+#logo{
+    height: 75px;
+    width: auto;
+}
+
+.sectionBreak {
+background-color: #FF8200;
+height: 75px;
+}
+
+
+
+
+.row {
+
+    margin-top: 20px;
+}
+
+
+
+
+footer {
+    color: rgba(83, 86, 90);
+    background-color: #FF8200;
+}
+
+.btn{
+    color: #FF8200 !important;
+}
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#memberTitle {
+    font-weight: 800;
+}
+
+#memberSupport {
+    font-style: italic;
+}
+
+.col {
+    text-align: center;
+}
+
+.forUsers {
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-size: 32px !important;
+}
+
+div {
+    font-size: 22px !important;
+}
+
+/* Apple v android images */
+
+.row > .col-4 > img {
+    height: auto;
+    width: 90%;
+    margin-bottom: 10%;
+    border: black 1px solid;
+    
+}
+
+/* Step 4 onward images */
+
+.row > .col > img { 
+    height: auto;
+    width: 30%;
+    border: black 1px solid;
+}
