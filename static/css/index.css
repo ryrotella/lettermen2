@@ -1,12 +1,26 @@
+body {
+
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .navbar{
     background-color: #FF8200;
 }
 
-.nav-link, .nav-text, .navbar-brand {
+.nav-link, .nav-text, #navTitle {
     color: white;
-    
+
+
+    /* color: gray;
+    border-bottom: 5px bottom white; */
     
 }
+
+/* .nav-item:hover{
+
+    color: gray;
+    border-bottom: 5px bottom white;
+} */
 
 #logo{
     height: 75px;
